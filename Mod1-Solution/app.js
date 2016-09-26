@@ -20,7 +20,12 @@
               itemCount++;
             }
           }
-          if(itemCount <= 3){
+          if(itemCount == 0){
+            $scope.userMsg = "Please enter data first"
+            $scope.MsgFontColor = "red";
+            $scope.boxColor = "red";
+          }
+          else if(itemCount <= 3){
             $scope.userMsg = "Enjoy!";
             $scope.MsgFontColor = "green";
             $scope.boxColor = "green";
